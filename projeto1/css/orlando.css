@@ -200,5 +200,68 @@ header .header-black li a{
   color: #A7A7A7 ;
   font-size: 18;
   font-family: 'Open Sans', sans-serif;
-  
 }
+#estatisticas{
+  background-color: #5C299a;
+  width: 100%;
+  height: 200px;
+  text-align: center;  
+ 
+}
+#estatisticas p{
+  color:#FDE092;
+  text-transform:uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 64px;
+  font-weight: 300;
+  margin-top: 36px;
+}
+#estatisticas p small{
+  color: #fff;
+  font-size: 24px;
+  display: block;
+}
+#call-to-action{
+  text-align: center;
+  margin-top: 100px;
+}
+#call-to-action h2{
+  color: #5e2799;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+ }
+ #call-to-action hr{
+  background-color: rgb(255, 221, 0);
+  border:#ffdd00 solid 8px;
+  width: 200px;
+  margin: 0 auto;
+ }
+ #call-to-action p{
+  color: #5C299a;
+  margin-top: 60px;
+  margin-bottom: 40px;
+ }
+ #call-to-action .btn{
+  line-height: 44px;
+  min-width: 164px;
+  line-height: 34px;
+  border-radius: 3px;
+  font-weight: bold;
+ }
+ #call-to-action .btn-roxo{
+  color: #fff;
+  background-color: #5C299a;
+  border: #5C299a;
+ 
+ }
+ #call-to-action .btn-amarelo{
+  color: #000;
+  background-color: #ffdd00;
+  border: #ffdd00;
+ }
+ #call-to-action .row-max-400{
+  margin: 0 auto;
+  max-width: 400px;
+ }
