@@ -9,8 +9,14 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="lib/OwlCarousel2/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="lib/OwlCarousel2/dist/assets/owl.theme.default.min.css">
+    <link
+      rel="stylesheet"
+      href="lib/OwlCarousel2/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="lib/OwlCarousel2/dist/assets/owl.theme.default.min.css"
+    />
     <link rel="stylesheet" href="css/orlando.css" />
     <title>Orlando City</title>
   </head>
@@ -81,26 +87,76 @@
           <hr />
         </div>
 
-        <div class="row thumbnails">
-          <div class="col-md-3">
-            <img src="img/noticia-thumb.jpg" alt="Noticia" />
-            <h3>Orlando City Acquires Goalkeep Joe Bendik from Toronto Fc</h3>
-            <time>Decenber 21, 2022</time>
+        <div class="row thumbnails owl-carousel owl-theme">
+          <div class="item">
+            <div class="item-inner">
+              <img src="img/noticia-thumb.jpg" alt="Noticia" />
+              <h3>Orlando City Acquires Goalkeep Joe Bendik from Toronto Fc</h3>
+              <time>Decenber 21, 2022</time>
+            </div>
           </div>
-          <div class="col-md-3">
-            <img src="img/noticia-thumb.jpg" alt="Noticia" />
-            <h3>Orlando City Acquires Goalkeep Joe Bendik from Toronto Fc</h3>
-            <time>Decenber 21, 2022</time>
+          <div class="item">
+            <div class="item-inner">
+              <img src="img/noticia-thumb.jpg" alt="Noticia" />
+              <h3>Orlando City Acquires Goalkeep Joe Bendik from Toronto Fc</h3>
+              <time>Decenber 21, 2022</time>
+            </div>
           </div>
-          <div class="col-md-3">
-            <img src="img/noticia-thumb.jpg" alt="Noticia" />
-            <h3>Orlando City Acquires Goalkeep Joe Bendik from Toronto Fc</h3>
-            <time>Decenber 21, 2022</time>
+          <div class="item">
+            <div class="item-inner">
+              <img src="img/noticia-thumb.jpg" alt="Noticia" />
+              <h3>Orlando City Acquires Goalkeep Joe Bendik from Toronto Fc</h3>
+              <time>Decenber 21, 2022</time>
+            </div>
           </div>
-          <div class="col-md-3">
-            <img src="img/noticia-thumb.jpg" alt="Noticia" />
-            <h3>Orlando City Acquires Goalkeep Joe Bendik from Toronto Fc</h3>
-            <time>Decenber 21, 2022</time>
+          <div class="item">
+            <div class="item-inner">
+              <img src="img/noticia-thumb.jpg" alt="Noticia" />
+              <h3>Orlando City Acquires Goalkeep Joe Bendik from Toronto Fc</h3>
+              <time>Decenber 21, 2022</time>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-inner">
+              <img src="img/noticia-thumb.jpg" alt="Noticia" />
+              <h3>Orlando City Acquires Goalkeep Joe Bendik from Toronto Fc</h3>
+              <time>Decenber 21, 2022</time>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-inner">
+              <img src="img/noticia-thumb.jpg" alt="Noticia" />
+              <h3>Orlando City Acquires Goalkeep Joe Bendik from Toronto Fc</h3>
+              <time>Decenber 21, 2022</time>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-inner">
+              <img src="img/noticia-thumb.jpg" alt="Noticia" />
+              <h3>Orlando City Acquires Goalkeep Joe Bendik from Toronto Fc</h3>
+              <time>Decenber 21, 2022</time>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-inner">
+              <img src="img/noticia-thumb.jpg" alt="Noticia" />
+              <h3>Orlando City Acquires Goalkeep Joe Bendik from Toronto Fc</h3>
+              <time>Decenber 21, 2022</time>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-inner">
+              <img src="img/noticia-thumb.jpg" alt="Noticia" />
+              <h3>Orlando City Acquires Goalkeep Joe Bendik from Toronto Fc</h3>
+              <time>Decenber 21, 2022</time>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-inner">
+              <img src="img/noticia-thumb.jpg" alt="Noticia" />
+              <h3>Orlando City Acquires Goalkeep Joe Bendik from Toronto Fc</h3>
+              <time>Decenber 21, 2022</time>
+            </div>
           </div>
         </div>
       </div>
@@ -268,6 +324,26 @@
           .on('blur', function () {
             $('li.search').removeClass('ativo')
           })
+        $('.thumbnails').owlCarousel({
+          loop: true,
+          margin: 12,
+          nav: true,
+          navText: ['Anterior', 'Próximo'],
+          Responsive: {
+            0: {
+              items: 1
+            },
+            480: {
+              items: 3
+            },
+            768: {
+              items: 4
+            },
+            1200: {
+              items: 6
+            }
+          }
+        })
       })
     </script>
   </body>
