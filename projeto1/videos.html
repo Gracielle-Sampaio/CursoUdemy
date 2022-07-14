@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
+    
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
@@ -17,6 +18,7 @@
       rel="stylesheet"
       href="lib/OwlCarousel2/dist/assets/owl.theme.default.min.css"
     />
+    <link rel="stylesheet" href="lib/plyr/src/sass/plyr.scss" />
     <link rel="stylesheet" href="css/orlando.css" />
     <title>Orlando City</title>
   </head>
@@ -89,7 +91,11 @@
           </div>
 
           <div class="row">
-            <video src="mp4/highlights.mp4" controls poster="img/highlights.jpg"></video>
+            
+              <video id="player" playsinline  controls  poster="img/highlights.jpg">
+                <source src="mp4/highlights.mp4" type="video/mp4" >
+              </video>
+            
 
            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
 
@@ -254,12 +260,16 @@
     </footer>
 
     <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/plyr/src/js/plyr.js"></script>
     <script src="lib/OwlCarousel2/dist/owl.carousel.min.js"></script>
     <script
       type="text/javascript"
       src="lib/bootstrap/js/bootstrap.min.js"
     ></script>
     <script src="js/efeitos.js"></script>
+    <script>
+      const player = new Plyr('#player');
+    </script>
     <script>
      $(function(){
       $(".thumbnails .item").on("click", function(){
@@ -290,7 +300,7 @@
         $(this).toggleClass("btn-success btn-danger");
 
         });
-
+          Plyr.setup();
         });
     </script>
   </body>
