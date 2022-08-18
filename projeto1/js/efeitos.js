@@ -14,24 +14,32 @@ $(document).ready(function () {
     .on('blur', function () {
       $('li.search').removeClass('ativo')
     })
+
   $('.thumbnails').owlCarousel({
-    loop: true,
-    margin: 12,
-    nav: true,
-    navText: ['Anterior', 'Próximo'],
-    Responsive: {
-      0: {
-        items: 1
-      },
-      480: {
-        items: 3
-      },
-      768: {
-        items: 4
-      },
-      1200: {
-        items: 6
-      }
+    loop:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
     }
   })
+  var owl = $('.thumbnails').data('owlCarousel');
+  $('#btn-news-prev').on("click", function(){
+    owl.prev();
+  })
+  $('#btn-news-next').on("click", function(){
+    owl.next();
+  })
 })
+
+
